@@ -511,6 +511,13 @@ body::before {
     color: var(--gold-light);
 }
 
+.saint-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
 .feast-day {
     background: var(--gold-primary);
     color: var(--white);
@@ -524,7 +531,16 @@ body::before {
     font-family: 'GFS Didot', serif;
     color: var(--burgundy);
     font-size: 1.8rem;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+}
+
+.saint-subtitle {
+    font-style: italic;
+    color: var(--gold-dark);
+    font-size: 1.1rem;
+    text-align: center;
+    margin-bottom: 25px !important;
+    font-weight: 500;
 }
 
 .saint-text h4 {
@@ -539,6 +555,31 @@ body::before {
 .saint-text p {
     margin-bottom: 15px;
     text-align: justify;
+}
+
+.journeys-list {
+    margin: 15px 0 20px 25px;
+    padding-left: 20px;
+}
+
+.journeys-list li {
+    margin-bottom: 12px;
+    color: var(--text-light);
+    line-height: 1.7;
+    position: relative;
+}
+
+.journeys-list li::marker {
+    color: var(--gold-primary);
+}
+
+.feast-note {
+    background: linear-gradient(135deg, rgba(201, 162, 39, 0.1) 0%, rgba(201, 162, 39, 0.05) 100%);
+    border-left: 4px solid var(--gold-primary);
+    padding: 15px 20px;
+    margin-top: 25px !important;
+    border-radius: 5px;
+    font-style: italic;
 }
 
 /* Quote Section */
