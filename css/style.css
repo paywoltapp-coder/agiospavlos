@@ -664,6 +664,103 @@ blockquote cite {
     color: var(--burgundy);
 }
 
+/* Sacraments Section */
+.sacraments-section {
+    margin-top: 50px;
+    padding-top: 40px;
+    border-top: 3px solid var(--gold-primary);
+}
+
+.sacraments-section h3 {
+    font-family: 'GFS Didot', serif;
+    color: var(--burgundy);
+    font-size: 1.8rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.sacraments-intro {
+    text-align: center;
+    color: var(--text-light);
+    font-size: 1.05rem;
+    max-width: 800px;
+    margin: 0 auto 40px;
+    line-height: 1.7;
+}
+
+.sacraments-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 25px;
+}
+
+.sacrament-card {
+    background: var(--white);
+    border: 2px solid var(--gold-primary);
+    border-radius: 10px;
+    padding: 30px 25px;
+    text-align: center;
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.3s ease;
+    display: block;
+    position: relative;
+    overflow: hidden;
+}
+
+.sacrament-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, var(--gold-primary), var(--gold-light));
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.sacrament-card:hover::before {
+    transform: scaleX(1);
+}
+
+.sacrament-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px var(--shadow-dark);
+    border-color: var(--burgundy);
+}
+
+.sacrament-icon {
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+
+.sacrament-card h4 {
+    font-family: 'GFS Didot', serif;
+    color: var(--burgundy);
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+
+.sacrament-card p {
+    color: var(--text-light);
+    font-size: 0.95rem;
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+
+.sacrament-link {
+    color: var(--gold-dark);
+    font-weight: 600;
+    font-size: 0.9rem;
+    display: inline-block;
+    transition: color 0.3s ease;
+}
+
+.sacrament-card:hover .sacrament-link {
+    color: var(--burgundy);
+}
+
 /* ============================================
    Calendar / Εορτολόγιο Page
    ============================================ */
@@ -1448,6 +1545,10 @@ blockquote cite {
     }
 
     .activities-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .sacraments-grid {
         grid-template-columns: 1fr;
     }
 }
