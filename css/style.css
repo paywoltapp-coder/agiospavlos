@@ -427,16 +427,35 @@ body::before {
     color: var(--text-light);
 }
 
-/* Chapel Section */
-.chapel-section {
+/* Chapels Section */
+.chapels-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
     margin-bottom: 40px;
 }
 
-.chapel-section h3 {
+.chapel-card {
+    margin-bottom: 0;
+}
+
+.chapel-card h3 {
     font-family: 'GFS Didot', serif;
     color: var(--burgundy);
     font-size: 1.4rem;
     margin-bottom: 15px;
+}
+
+.chapel-card .byzantine-border {
+    height: 100%;
+}
+
+.feast-info {
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 2px solid var(--gold-primary);
+    font-style: italic;
+    color: var(--burgundy-dark);
 }
 
 /* Clergy Section */
