@@ -718,7 +718,7 @@ blockquote cite {
 
 .feast-item {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     gap: 15px;
     padding: 12px 0;
     border-bottom: 1px dashed rgba(0, 0, 0, 0.1);
@@ -765,7 +765,6 @@ blockquote cite {
     color: var(--text-dark);
     font-size: 0.95rem;
     line-height: 1.5;
-    padding-top: 8px;
 }
 
 /* Κινητές Εορτές */
